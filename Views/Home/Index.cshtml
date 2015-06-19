@@ -1,0 +1,208 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+   <!-- <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Script/bootstrap.min.js"></script>
+    <script src="~/Script/bootstrap.js"></script>-->
+
+    @{
+        Layout = "~/Views/Shared/Layout1.cshtml";
+    }
+    <script src="bootstrap.min.js"></script>
+    <title></title>
+    <style>
+        .image {
+            height: 470px;
+            width: 350px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--<img style="height:100px" src="Images/logo.png" />
+
+    <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+    <br>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <form name="opennew">
+                <select name="sites" class="btn btn-success" id="sites">
+                    <option value="~/Home/Index" selected>Select Site</option>
+                    <option value="~/Home/Clothing">Men's Clothing</option>
+                    <option value="~/Home/MenShoes">Men's Shoes</option>
+                    <option value="~/Home/MenAccessories">Men's Accessories</option>
+                    <option value="~/Home/HairStyle">Watch new Hair Style</option>
+                </select>
+
+                <input type="button" class="btn btn-danger" name="Submit" value="Go!" onclick="window.open(sites.value)">
+            </form>
+            <div class="collapse navbar-collapse " id="navbarcollapse">
+                <ul class="nav navbar-nav pull-right">
+
+                    <li class="active"><a href="~/Home/Service" class="alert-link">SERVICE</a></li>
+                    <li><a href="~/Home/Index" class="alert-link">Home</a></li>
+                    <li><a href="~/Home/AboutUS" class="alert-link">About US</a></li>
+                    <li><a href="~/Home/Support" class="alert-link">Support</a></li>
+                    <li><a href="~/Home/Contact" class="alert-link">CONTACT</a></li>
+                    <!--   <li><a href="~\Admin-Template\pages\login.html" class="alert-link">Admin Panel</a></li>-->
+
+
+    <!--               <li><a data-target="#login" data-toggle="modal" class="alert-link">Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </nav>
+    -->
+
+
+    <!-- Modal Login -->
+    <div id="login" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    <h4 class="modal-title" style="color:darkblue">Login</h4>
+                    <div class="modal-footer"></div>
+                    <form>
+                        <div class="form-group">
+                            <h4 style="color:deepskyblue">Username:</h4>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="form-group">
+                            <h4 style="color:deepskyblue">Password:</h4>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-dismiss="modal">Login</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Conquer the World With Your Style</h1>
+
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="item">
+                    <center>  <img src="~/Images/pic1.jpg" alt="Chania" /> </center>
+                </div>
+            </div>
+
+            <div class="item">
+                <center>  <img src="~/Images/pic2.jpg" alt="Chania" /> </center>
+            </div>
+
+            <div class="item">
+                <center>  <img src="~/Images/pic3.jpg" alt="Flower" /> </center>
+            </div>
+
+            <div class="item">
+                <center>  <img src="~/Images/pic4.jpg" alt="Flower" /></center>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!--<section class="demo">
+        <div class="container">
+
+
+            <div style="display: inline-block;" class="action  hide-from-mobile">
+                <img class="image" src="~/Images/pic1.jpg" alt="sweaters" />
+                <img class="image" src="~/Images/pic2.jpg" />
+                <img class="image" src="~/Images/pic3.jpg" />
+                <img class="image"  src="~/Images/pic4.jpg" />
+
+            </div>
+        </div>
+    </section>-->
+
+    <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+
+    <h1>Welcome to Zohaib Clothing</h1>
+
+    <div id="foobar">
+    <!--    <footer>
+            <ul>
+                <li>&copy;2015 -</li>
+                <li><a href="Zohaib.html" target="_blank">Zohaib Sheikh</a></li>
+                <li><a href="Footer.html">Warrenty & Support</a></li>
+                <li><a href="Footer.html">Refund & Exchange</a></li>
+                <li><a href="Footer.html">Shipping info</a></li>
+                <li><a href="Footer.html">Privacy Policy</a></li>
+                <li><a href="AboutUS.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <style>
+        #foobar ul {
+            margin: 0;
+            padding: 5px;
+            list-style-type: none;
+            text-align: center;
+            background-color: #3b3420;
+        }
+
+            #foobar ul li {
+                display: inline-block;
+            }
+
+                #foobar ul li a {
+                    padding: 0.2em 2em;
+                    color: #fff;
+                     font-family: Calibri;
+                    text-decoration: none;
+                }
+
+                    #foobar ul li a:hover {
+                        text-decoration: underline;
+                    }
+    </style>-->
+    <script src="jquery.min.js"></script>
+        <script src="jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
+
