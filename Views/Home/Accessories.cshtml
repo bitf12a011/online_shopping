@@ -1,0 +1,212 @@
+﻿@model List<EadProject.Models.Accessory>
+@{
+    ViewBag.Title = "MenAccessories";
+    Layout = "~/Views/Shared/Layout1.cshtml";
+}
+
+<title></title>
+<style>
+    .floated_img {
+        float: left;
+        height: 300px;
+        width: 300px;
+    }
+</style>
+</head>
+<body>
+    @*
+            <h1>Men Watches </h1>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/w1.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Casio <br>
+                            Rs: 6150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/w2.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Rado<br>
+                            Rs: 11150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/w3.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Quartz<br>
+                            Rs: 9150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/w4.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Rolex<br>
+                            Rs: 15150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+            </div>
+
+            <br>
+            <h1>Men Wallets </h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/wa1.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Wallet 1<br>
+                            Rs: 1150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/wa2.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Wallet 2<br>
+                            Rs: 1150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/wa3.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Wallet 3<br>
+                            Rs: 1150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/wa4.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Wallet 4<br>
+                            Rs: 1150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+            </div>
+            <br>
+
+            <h1>Men SunGlasses </h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/g1.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Shades<br>
+                            Rs: 1950
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/g2.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Casual Rey Ban<br>
+                            Rs: 1950
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/g3.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Harry Potter Style<br>
+                            Rs: 1150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <img class="floated_img" src="~/Images/g4.jpg" alt="Some image">
+                    <center>
+                        <p>
+                            Pilot Style<br>
+                            Rs: 1150
+                        </p>
+                       <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+                    </center>
+                </div>
+            </div>
+            <br>
+
+
+
+
+            <!-- <div class="row">
+                <div class="col-md-3">
+                    <div class="floated_img">
+                        <img src="~/Images/cl2.jpg" alt="Some image">
+                        <p>Description of above image</p>
+
+                        <img src="~/Images/cl1.jpg" alt="Some image">
+                        <p>Description of above image</p>
+                    </div>
+                    </div >
+            </div>
+                -->
+            <!-- <ul>
+                <li>
+                <div class="floated_img">
+                    <img src="~/Images/cl1.jpg" alt="Some image">
+                    <p>Description of above image</p>
+                </div>
+                <div class="floated_img">
+                    <img src="~/Images/cl2.jpg" alt="Some image">
+                    <p>Description of above image</p>
+                </div>
+                    </li>
+            </ul>
+                -->
+            <br>
+            <br>
+            <br>
+
+
+        </body>
+        </html>
+    *@
+    @foreach (var br in Model)
+    {
+        <form action="/Order/AddtoCartA?pid=@br.Id" method="post" enctype="multipart/form-data">
+            <div class="col-sm-6 col-md-4 hero-feature">
+                <div class="thumbnail">
+                    <img src="~/Images/@br.Images" style="height:300px;width:300px" />
+                    <div class="caption">
+                        <center>
+                            <h4>@br.Name</h4>
+                            <p>
+                                <h4> @br.Price </h4>
+                            </p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    }
+    <br>
+    <br>
+    <br>
+</body>

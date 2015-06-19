@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "UpdateProduct";
+    Layout = "~/Views/Shared/Layout2.cshtml";
+}
+
+<h2>Update Product</h2>
+
+<div class="row-fluid">
+    <div class="span12 text-center">
+     <br />
+
+        <form>
+
+            <select name="sites" class="btn btn-primary" id="sites">
+                <option value="~/Home/Index" selected>Select category</option>
+                <option value="/Product/UpdateClothes">Update Men's Clothing</option>
+                <option value="/Product/UpdateShoes">Update Men's Shoes</option>
+                <option value="/Product/UpdateAccessories">
+                    Update Men's Accessories
+                </option>
+            </select>
+
+            <input type="button" class="btn btn-danger" name="Submit"
+                   value="Go!" onclick="window.open(sites.value)">
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,27 @@
+﻿@model List<EadProject.Models.Sho>
+@{
+    ViewBag.Title = "DeleteShoes";
+    Layout = "~/Views/Shared/Layout2.cshtml";
+}
+
+<h2>Delete Shoes</h2>
+@foreach (var br in Model)
+{
+    <form action="/Product/DeleteShoe?pname=@br.Name" method="post" enctype="multipart/form-data">
+        <div class="col-sm-6 col-md-4 hero-feature">
+            <div class="thumbnail">
+                <img src="~/Images/@br.Images" style="height:300px;width:300px" />
+                <div class="caption">
+                    <center>
+                        <h4>@br.Name</h4>
+                        <p><h4> @br.Price </h4> <button type="submit" class="btn btn-danger">Delete</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </form>
+
+}
+<br>
+<br>
+<br>

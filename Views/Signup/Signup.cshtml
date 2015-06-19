@@ -1,0 +1,86 @@
+﻿@model EadProject.Models.User
+
+@{
+    ViewBag.Title = "Signup";
+    Layout = "~/Views/Shared/Layout1.cshtml";
+}
+<!--<script>
+    function A() {
+        var s = $('#username').val();
+        $.getJson('/Signup/Check?uname=' + s, function (d)
+        {
+            if (d == true) {
+                $('#p1').text("  *UserName already exist");
+            }
+            else
+            {
+                $('#p1').text("  *UserName not Exist");
+            }
+        })
+    };
+</script>
+
+-->
+@Scripts.Render("~/bundles/jquery")
+<script>
+
+    $(document).ready(function () {
+
+        $('#checking').hide();
+
+        $('#b1').click(function () {
+
+            var user = $('#username').val();
+
+            //alert('User Name ='+ userName);
+            $('#checking').show();
+            $.getJSON("/Signup/Check?Uname="+user, function (data) {
+                $('#checking').hide();
+                if (data) {
+                    $('#result').text("User already exists in database");
+
+                }
+                else {
+
+                    $('#result').text("User Name is available");
+                }
+            });
+
+        });
+
+    });
+</script>
+
+<body>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="row-fluid">
+        <div class="span12 text-center">
+            <h2>Sign Up</h2>
+            <br />
+            @Html.BeginForm("getSignup", "Signup", FormMethod.Post)
+            <form action="/Signup/getSignup" method="post">
+
+                <h4>Name:</h4> <input type="text" name="`" placeholder="Enter Name" id="username" /> <br />
+                <br><input type="button" class="btn-primary" style="width :60px;height:35px;font-size:10px" id="b1" value="Check" />
+                <div id="result">
+                </div>
+                <h4>Password</h4>  <input type="text" name="password" id="password" placeholder="Enter Password" /><br /><br />
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            @{Html.EndForm();}
+        </div>
+    </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+</body>
+
+

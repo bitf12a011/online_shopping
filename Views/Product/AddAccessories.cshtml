@@ -1,0 +1,24 @@
+﻿@model EadProject.Models.Accessory
+@{
+    ViewBag.Title = "Add Clothing";
+    Layout = "~/Views/Shared/Layout2.cshtml";
+}
+
+
+<div class="row-fluid">
+    <div class="span12 text-center">
+        <h2>Add Accessories</h2>
+        <br />
+
+        <form action="/Product/AddAccessories" method="post" enctype="multipart/form-data">
+
+            @Html.LabelFor(x => x.Name) <input type="text" name="Name" placeholder="Enter Name of Product" /><br /><br />
+            @Html.LabelFor(x => x.Price)  <input type="text" name="Price" placeholder="Enter Price" /><br /><br />
+
+            <input type="file" name="Images" />
+
+            <button type="submit" class="btn btn-success">Add Product</button>
+        </form>
+
+    </div>
+</div>

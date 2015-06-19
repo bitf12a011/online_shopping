@@ -1,0 +1,30 @@
+﻿@model EadProject.Models.User
+@{
+    ViewBag.Title = "SignIn";
+    Layout = "~/Views/Shared/Layout1.cshtml";
+}
+
+<h2>Signin</h2>
+<div class="row-fluid">
+    <div class="span12 text-center">
+        <h2>Sign In</h2>
+        <form method="post" action="/Signin/getSignin">
+            <br />
+            <h4>   @Html.LabelFor(x=>x.username) </h4>
+           @Html.TextBoxFor(model => model.username)
+            <h4> @Html.LabelFor(x => x.password)</h4>
+           @Html.TextBoxFor(model => model.password)
+
+           @* Username <input type="text" name="username" placeholder="Enter Username" /><br /><br />
+    Password  <input type="text" name="password" placeholder="Enter Password" /><br /><br />*@
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+
+
+</div>
+
+
+<br />
+<br />
+<br />

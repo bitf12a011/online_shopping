@@ -1,0 +1,38 @@
+﻿@model List<EadProject.Models.Clohte>
+@{
+    ViewBag.Title = "Clothing";
+    Layout = "~/Views/Shared/Layout2.cshtml";
+}
+
+
+<title></title>
+<style>
+    .floated_img {
+        float: left;
+        height: 300px;
+        width: 300px;
+    }
+</style>
+
+<body>
+   
+    @foreach (var br in Model)
+    {
+        <div class="col-sm-6 col-md-4 hero-feature">
+            <div class="thumbnail">
+                <img src="~/Images/@br.Images" style="height:300px;width:300px" />
+                <div class="caption">
+                    <center>
+                        <h4>@br.Name</h4>
+                        <p><h4> @br.Price </h4> 
+                        </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    }
+    <br>
+    <br>
+    <br>
+</body>

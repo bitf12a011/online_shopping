@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Cart";
+}
+
+<h2>Cart</h2>
+
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                <h4 class="modal-title" style="color:darkblue">Carting</h4>
+                <div class="modal-footer"></div>
+                <div class="quantity">
+                    <div class="fieldcontainer" data-role="fieldcontain">
+                        <form class="form-inline">
+                            <label for="orderQty">
+                                Quantity
+                            </label>
+                            <input class="form-control" type="text" value="Enter Quantity"/>
+                            x
+                            <label class="form-control" value="" />
+                           
+                           
+                            <span id="orderPrice"></span>
+                            =
+                            <span id="orderTotal"></span>
+                        </form>
+                    </div>
+                </div>
+
+                        
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Generate Bill </button>
+        </div>
+    </div>
+
+</div><br>
+<center>
+    <a class="btn btn-info" role="button" href="/Home/Home1" data-toggle="modal">Continue Shopping</a>
+</center>

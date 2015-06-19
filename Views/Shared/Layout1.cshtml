@@ -1,0 +1,151 @@
+﻿<html>
+
+<head>
+    <script src="~/Scripts/jquery-1.9.1-vsdoc.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Script/bootstrap.min.js"></script>
+    <script src="~/Script/bootstrap.js"></script>
+    <script src="~/Scripts/npm.js"></script>
+    <script src="~/Script/bootstrap.js"></script>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <img style="height:100px" src="~/Images/logo.png" />
+
+    <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+    <br>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+            </div>
+
+          <div>  <form name="opennew">
+                <select name="sites" class="btn btn-success" id="sites">
+                    <option value="~/Home/Index" selected>Select Site</option>
+                    <option value="/Home/Cloth">Men's Clothing</option>
+                    <option value="/Home/Shoes">Men's Shoes</option>
+                    <option value="/Home/Accessories">
+                        Men's Accessories
+                    </option>
+                    <option value="~/Home/HairStyle">
+                        Watch new Hair Style
+                    </option>
+                </select>
+
+                <input type="button" class="btn btn-danger" name="Submit"
+                       value="Go!" onclick="window.open(sites.value)">
+            </form>
+            </div>
+            
+                 <div class="collapse navbar-collapse " id="navbarcollapse">
+                <ul class="nav navbar-nav pull-right">
+
+                    <li class="active">
+                        <a href="~/Home/Service" class="alert-link">SERVICE</a>
+                    </li>
+                    <li><a href="/Home" class="alert-link">Home</a></li>
+                    <li>
+                        <a href="/AboutUS/AboutUS" class="alert-link">
+                            About US
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Home/Support" class="alert-link">Support</a>
+                    </li>
+                    <li>
+                        <a href="~/Home/Contact" class="alert-link">CONTACT</a>
+                    </li>
+
+                    <li><a href="~/Signin/SignIn" class="alert-link">Sign in</a></li>
+                    <li>
+                        <a href="~/Signup/Signup" class="alert-link">
+                            Sign
+
+                            up
+                        </a>
+                    </li>
+                    <!--   <li><a href="~\Admin-Template\pages\login.html"
+
+                    class="alert-link">Admin Panel</a></li>-->
+                </ul>
+            </div>
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+        </div><!-- /.navbar-collapse -->
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+    <br/>
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <div id="foobar">
+        <footer>
+            <ul>
+                <li>&copy;2015 -</li>
+                <li><a href="~/Home/Zohaib" target="_blank">Zohaib Sheikh</a></li>
+                <li><a href="~/Home/Footer">Warrenty & Support</a></li>
+                <li><a href="~/Home/Footer">Refund & Exchange</a></li>
+                <li><a href="~/Home/Footer">Shipping info</a></li>
+                <li><a href="~/Home/Footer">Privacy Policy</a></li>
+                <li><a href="~/Home/AboutUS">About Us</a></li>
+                <li><a href="~/Home/Contact">Contact Us</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <style>
+        #foobar ul {
+            margin: 0;
+            padding: 5px;
+            list-style-type: none;
+            text-align: center;
+            background-color: #3b3420;
+        }
+
+            #foobar ul li {
+                display: inline-block;
+            }
+
+                #foobar ul li a {
+                    padding: 0.2em 2em;
+                    color: #fff;
+                    font-family: Calibri;
+                    text-decoration: none;
+                }
+
+                    #foobar ul li a:hover {
+                        text-decoration: underline;
+                    }
+    </style>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

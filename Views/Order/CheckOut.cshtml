@@ -1,0 +1,26 @@
+﻿@model List<EadProject.Models.OrderDetail>
+@{
+    ViewBag.Title = "AddtoCartC";
+}
+
+<h2>Your CartC</h2>
+<table border="1">
+    <tr >
+        <td> <h4>Product Name  </h4></td>
+        <td><h4> Product Price </h4></td>
+    </tr>
+
+    @foreach (var br in Model)
+{
+    <tr>
+        <td>
+            <h4>@br.Name</h4>
+        </td>
+        <td>
+            <h4> @br.Price </h4>
+        </td>
+    </tr>
+}
+</table>
+<a href="/Order/GenBill"> <input type="button" class="pull-right" value="Genterate Bill" /> </a>
+<br />

@@ -1,0 +1,357 @@
+﻿@model List<EadProject.Models.Clohte>
+@{
+    ViewBag.Title = "Clothing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<title></title>
+<style>
+    .floated_img {
+        float: left;
+        height: 300px;
+        width: 300px;
+    }
+</style>
+
+<body>
+    @*
+    <h1>T-Shirts </h1>
+
+     <div class="row">
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/cl1.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo T-Shirt<br>
+                     Rs: 1150
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/cl2.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo T-Shirt<br>
+                     Rs: 1150
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/cl3.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo T-Shirt<br>
+                     Rs: 1150
+                 </p>
+                 <input type="button" class="btn btn-danger" name="Submit" value="Add to Cart" onclick="window.open(sites.value)">
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/cl4.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo T-Shirt<br>
+                     Rs: 1150
+                 </p>
+                 <input type="button" class="btn btn-danger" name="Submit" value="Add to Cart" onclick="window.open(sites.value)">
+             </center>
+         </div>
+     </div>
+
+     <br>
+     <h1>Shirts </h1>
+     <div class="row">
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/cl5.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Man Shirt<br>
+                     Rs: 1150
+                 </p>
+                 <input type="button" class="btn btn-danger" name="Submit" value="Add to Cart" onclick="window.open(sites.value)">
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/cl6.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo T-Shirt<br>
+                     Rs: 1150
+                 </p>
+                 <input type="button" class="btn btn-danger" name="Submit" value="Add to Cart" onclick="window.open(sites.value)">
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/cl7.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo T-Shirt<br>
+                     Rs: 1150
+                 </p>
+                 <input type="button" class="btn btn-danger" name="Submit" value="Add to Cart" onclick="window.open(sites.value)">
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/cl8.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo T-Shirt<br>
+                     Rs: 1150
+                 </p>
+                 <input type="button" class="btn btn-danger" name="Submit" value="Add to Cart" onclick="window.open(sites.value)">
+             </center>
+         </div>
+     </div>
+     <br>
+
+     <h1>Jeans </h1>
+     <div class="row">
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/j1.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Man Jeans<br>
+                     Rs: 1950
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/j2.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Man Jeans<br>
+                     Rs: 1950
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/j3.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo Jeans<br>
+                     Rs: 1150
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/j4.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Polo Pents<br>
+                     Rs: 1150
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+     </div>
+     <br>
+
+     <h1>Stylish Kurta Shalwar </h1>
+     <div class="row">
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/k1.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Green Kurta<br>
+                     Rs: 3550
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/k2.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Black Kurta <br>
+                     Rs: 11050
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/k3.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Brown Kurta<br>
+                     Rs: 40000
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+         <div class="col-md-3">
+             <img class="floated_img" src="~/Images/k4.jpg" alt="Some image">
+             <center>
+                 <p>
+                     Orange<br>
+                     Rs: 5550
+                 </p>
+                 <a class="btn btn-danger" role="button" href="/Home/Cart" data-toggle="modal">Add to Cart</a>
+             </center>
+         </div>
+     </div>
+     <br>
+
+
+     <div class="modal-content">
+         <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+             <h4 class="modal-title" style="color:darkblue">Login</h4>
+             <div class="modal-footer"></div>
+             <form>
+                 <div class="form-group">
+                     <h4 style="color:deepskyblue">Username:</h4>
+                     <input type="text" class="form-control" id="username">
+                 </div>
+
+                 <div class="form-group">
+                     <h4 style="color:deepskyblue">Password:</h4>
+                     <input type="password" class="form-control" id="password">
+                 </div>
+
+             </form>
+
+         </div>
+     </div>
+
+     <div class="modal-footer">
+
+         <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-info" data-dismiss="modal">Login</button>
+     </div>
+     </div>
+
+     </div>
+
+
+     <!-- <div class="row">
+         <div class="col-md-3">
+             <div class="floated_img">
+                 <img src="Images\cl2.jpg" alt="Some image">
+                 <p>Description of above image</p>
+
+                 <img src="Images\cl1.jpg" alt="Some image">
+                 <p>Description of above image</p>
+             </div>
+             </div >
+     </div>
+         -->
+     <!-- <ul>
+         <li>
+         <div class="floated_img">
+             <img src="Images\cl1.jpg" alt="Some image">
+             <p>Description of above image</p>
+         </div>
+         <div class="floated_img">
+             <img src="Images\cl2.jpg" alt="Some image">
+             <p>Description of above image</p>
+         </div>
+             </li>
+     </ul>
+         -->
+     <div id="login" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+
+             <!-- Modal content-->
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                     <h4 class="modal-title" style="color:darkblue">Login</h4>
+                     <div class="modal-footer"></div>
+                     <form>
+                         <div class="form-group">
+                             <h4 style="color:deepskyblue">Username:</h4>
+                             <input type="text" class="form-control" id="username">
+                         </div>
+                         <div class="form-group">
+                             <h4 style="color:deepskyblue">Password:</h4>
+                             <input type="password" class="form-control" id="password">
+                         </div>
+
+                     </form>
+
+                 </div>
+             </div>
+
+             <div class="modal-footer">
+
+                 <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-info" data-dismiss="modal">Login</button>
+             </div>
+         </div>
+
+     </div>
+
+
+     <br>
+     <br>
+     <br>*@
+
+    @Scripts.Render("~/bundles/jquery")
+    <script>
+
+        $(document).ready(function () {
+
+            $('#imag').hide();
+
+            $('#b1').click(function () {
+
+                var searchv = $('#search').val();
+
+                $.getJSON("/Clothing/Check?searchva=" + searchv, function (data) {
+                     if (data) {
+                        //  $('#imag').text("User already exists in database");
+                      //  $('#imag').attr('src','~/Images/'+data[0].I);
+                        $('#l1').text("Available");
+
+                    }
+                    else {
+
+                        $('#l1').text("Product is not available");
+                    }
+                });
+
+            });
+
+        });
+    </script>
+
+
+    <input type="text" id ="search" placeholder="Search" style="width:20%;height:20%" class="btn-primary">
+    <input type="button" id="b1" style="height:20%" value="Search">
+      <center> <h4>
+           <label id="l1"></label>
+       </h4></center>
+
+   <br><br /> <br /> <a href="/Order/CheckOut"> <input type="button" value="CheckOut"  /></a>
+    @foreach (var br in Model)
+{
+    <form action="/Order/AddtoCartC?pid=@br.Id" method="post" enctype="multipart/form-data">
+        <div class="col-sm-6 col-md-4 hero-feature">
+            <div class="thumbnail">
+                <img src="~/Images/@br.Images" style="height:300px;width:300px" />
+                <div class="caption">
+                    <center>
+                        <h4>@br.Name</h4>
+                        <p>
+                            <h4> @br.Price </h4>
+                            <button type="submit" class="btn btn-danger">Add to Cart</button>
+                        </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </form>
+
+}
+    <br>
+    <br>
+    <br>
+</body>

@@ -1,0 +1,18 @@
+﻿@model EadProject.Models.Clohte 
+@{
+    ViewBag.Title = "UpdateClohtes1";
+    Layout = "~/Views/Shared/Layout2.cshtml";
+}
+
+<h2>Updating @Model.Name</h2>
+
+
+<form action="/Product/CUpdateConfirm?cid=@Model.Id" method="post">
+    <center>
+        <img src="~/Images/@Model.Images" style="height:300px;width:300px" /> <br /> <br />
+        <input type="file" name="Images" value="@Model.Images" /> <br />
+        Name <input type="text" value="@Model.Name" name="Name" /><br>
+        Price <input type="text" value="@Model.Price" name="Price" /><br>
+        <input type="submit" value="Update" />
+    </center>
+</form>
